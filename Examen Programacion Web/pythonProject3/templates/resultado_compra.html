@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de Compra</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            text-align: center;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Resultado de Compra</h2>
+        <p>Nombre: {{ nombre }}</p>
+        <p>Total sin descuento: ${{ total_sin_descuento }}</p>
+        <p>Descuento: {{ descuento * 100 }}%</p>
+        <p>Total con descuento: ${{ total_con_descuento }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- templates/ejercicio2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+        }
+        #enviar {
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 2</h1>
+    <form id="formulario2" action="/verificar_credenciales" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña" required>
+
+        <button id="enviar" type="submit">Enviar</button>
+    </form>
+</body>
+</html>

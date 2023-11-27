@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .square-button {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            line-height: 100px;
+        }
+        .purple-button {
+            background-color: purple;
+        }
+        .lime-button {
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menú Principal</h1>
+    <div class="button-container">
+        <a href="/ejercicio1"><button class="square-button purple-button">Ejercicio 1</button></a>
+        <a href="/ejercicio2"><button class="square-button lime-button">Ejercicio 2</button></a>
+    </div>
+</body>
+</html>

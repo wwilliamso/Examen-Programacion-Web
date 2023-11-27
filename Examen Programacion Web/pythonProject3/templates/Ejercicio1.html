@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px; /* Agregamos margen arriba para separar del formulario */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form action="/calcular_compra" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required>
+
+        <label for="tarros">Cantidad de Tarros de Pintura:</label>
+        <input type="number" name="tarros" id="tarros" min="1" required>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
